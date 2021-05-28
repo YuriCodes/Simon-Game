@@ -182,3 +182,53 @@ header{
         grid-template-columns: 150px 150px;
     }
 }
+
+
+@media screen and (max-width: 380px){
+    .game{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .tile-container{
+        width: 100%;
+        height: 100%;
+        grid-template-rows: 150px 150px;
+        grid-template-columns: 150px 150px;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (min-width: 410px){
+    .game{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .tile-container{
+        width: 100%;
+        height: 100%;
+        grid-template-rows: 140px 140px;
+        grid-template-columns: 140px 140px;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (min-width: 768px){
+    .game{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+       
+    }
+    .tile-container{
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 160px 160px;
+        grid-template-rows: 160px 160px;
+        justify-content: center;
+    }
+}
