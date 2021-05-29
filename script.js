@@ -10,12 +10,14 @@ highScoreBoard.textContent= 'HIGH SCORE: ' + highScore;
 let sequence = []
 let humanSequence = []
 let level = 0
+let score = 0
 
 function resetGame(text){
     alert(text)
     sequence = []
     humanSequence= []
     level= 0
+    highScoreBoard = highScore
     startButton.classList.remove('hidden')
     heading.textContent = 'Simon Game'
     info.classList.add('hidden')
@@ -59,6 +61,7 @@ function nextStep(){
 //next level
 function nextRound(){
     level +=1
+    score +=1
 //add unclickable when the round starts and update info and heading
 tileContainer.classList.add('unclickable')
 info.textContent = 'Computer\'s turn'
