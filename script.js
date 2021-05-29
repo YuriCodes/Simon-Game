@@ -35,10 +35,10 @@ function activateTile(color){
 
     tile.classList.add('activated')
     sound.play()
-
+    
     setTimeout(() => {
         tile.classList.remove('activated')
-    }, 200)
+    }, 300)
 }
 
 
