@@ -38,7 +38,7 @@ function activateTile(color){
     
     setTimeout(() => {
         tile.classList.remove('activated')
-    }, 300)
+    }, 600)
 }
 
 
