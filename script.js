@@ -61,7 +61,7 @@ function nextStep(){
 //next level
 function nextRound(){
     level +=1
-    score +=1
+    score++
 //add unclickable when the round starts and update info and heading
 tileContainer.classList.add('unclickable')
 info.textContent = 'Computer\'s turn'
@@ -97,6 +97,8 @@ function handleClick(tile){
         //how many levels and if completed, you win
     if(humanSequence.length === 35){
         resetGame('Congrats! You\'ve completed the levels!!')
+        highScoreBoard = highScore
+        score = highScoreBoard
         return 
     }
     //humanSequence is back to 
