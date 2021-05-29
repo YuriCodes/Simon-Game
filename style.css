@@ -21,6 +21,21 @@ body{
     transform: translate(-50%, -50%);
 }
 
+#rules{
+    position: absolute;
+    top: 106%;
+    left: 50%;
+    right: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.text-rules{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .hidden{
     display: none !important;
 }
