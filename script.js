@@ -17,7 +17,7 @@ function resetGame(text){
     sequence = []
     humanSequence= []
     level= 0
-    highScoreBoard = highScore
+    checkHighScore(score)
     startButton.classList.remove('hidden')
     heading.textContent = 'Simon Game'
     info.classList.add('hidden')
